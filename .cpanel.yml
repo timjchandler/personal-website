@@ -2,6 +2,5 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/clouksjx/public_html/
-    - export REPOPATH=/home/clouksjx/repositories/personal-website/
-    - $REPOPATH index.html $DEPLOYPATH
-    - $REPOPATH style.css $DEPLOYPATH
+    - /bin/cp index.html $DEPLOYPATH
+    - /bin/cp style.css $DEPLOYPATH
