@@ -1,6 +1,6 @@
 /* General Font */
 * {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Dongle', sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -10,13 +10,15 @@
 
 /* Background colours */
 header {
-    background-color: #f5f5f5;
+    /* background-color: #f5f5f5; */
     padding: 10px 25px;
     margin-bottom: 25px;
 }
 
 body {
-    background-color: #bfcedb;
+    background-color: #003049;
+    background: url(img/layered-bg.svg);
+    background-size: cover;
 }
 
 aside {
@@ -27,7 +29,9 @@ aside {
 }
 
 h1 {
-    color: #353535;
+    font-size: 12rem;
+    font-weight: 100;
+    color: #f0e5d4;
 }
 
 h2 {
@@ -47,14 +51,18 @@ p {
     margin-bottom: 15px;
 }
 
+a {
+}
+
 a:link, a:visited {
-    color: #c54205;
+    font-size: 2rem;
+    color: #ffae00;
     text-decoration: none;   
 }
 
 a:hover {
-    color: #ffae00;
-    font-weight: bold;
+    color: #f3ce7e;
+    /* font-weight: bold; */
 }
 
 .container {
@@ -79,12 +87,15 @@ a:hover {
     width: 80px;
 }
 
-/* FLOAT */
-
-/* h1 {
-    float: left;
+/* Flex settings*/
+/* Apply flex to the header */
+header {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
 }
 
-.top-menu {
-    float: right
-} */
+.main-title {
+    display: flex;
+    justify-content: center;
+}
