@@ -1,6 +1,6 @@
 /* General Font */
 * {
-    font-family: 'Dongle', sans-serif;
+    font-family: 'Nunito', sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -38,7 +38,7 @@ aside {
 h1 {
     font-family: 'Pangolin', cursive;
     letter-spacing: -0.2rem;
-    font-size: 9rem;
+    font-size: 7rem;
     font-weight: 100;
     /* color: #ECC046;  */
     background: -webkit-linear-gradient(-45deg, 
@@ -68,7 +68,7 @@ a {
 }
 
 a:link, a:visited {
-    font-size: 2rem;
+    font-size: 1rem;
     color: #ffae00;
     text-decoration: none;   
     text-shadow: 0.1rem 0.05rem 0.2rem #1d3557;
@@ -80,8 +80,13 @@ a:hover {
 }
 
 .container {
-    width: 800px;
+    /* width: 600px; */
+    width: 35rem;
+    min-height: 40rem;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .copyright {
@@ -113,11 +118,12 @@ header {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    margin: 5rem 0 4rem 0;
 }
 
 .cloudberry {
-    width: 20rem;
-    height: 20rem;
+    width: 15rem;
+    height: 15rem;
 }
 
 /* Animation */
