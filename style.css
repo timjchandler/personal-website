@@ -16,9 +16,16 @@ header {
 }
 
 body {
-    background-color: #003049;
-    background: url(img/layered-bg.svg);
-    background-size: cover;
+    /* background-color: #003049; */
+
+	background: linear-gradient(-45deg,  	
+    #03045e, #0077b6, #48cae4, #fab3a9);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+
+    /* background: url(img/layered-bg.svg); */
+    /* background-size: cover; */
 }
 
 aside {
@@ -29,9 +36,15 @@ aside {
 }
 
 h1 {
-    font-size: 12rem;
+    font-family: 'Pangolin', cursive;
+    letter-spacing: -0.2rem;
+    font-size: 9rem;
     font-weight: 100;
-    color: #f0e5d4;
+    /* color: #ECC046;  */
+    background: -webkit-linear-gradient(-45deg, 
+        #faf8f8, #ECC046);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 h2 {
@@ -58,6 +71,7 @@ a:link, a:visited {
     font-size: 2rem;
     color: #ffae00;
     text-decoration: none;   
+    text-shadow: 0.1rem 0.1rem 0.5rem #1d1d1d;
 }
 
 a:hover {
@@ -98,4 +112,22 @@ header {
 .main-title {
     display: flex;
     justify-content: center;
+}
+
+.cloudberry {
+    width: 20rem;
+    height: 20rem;
+}
+
+/* Animation */
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
