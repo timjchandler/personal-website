@@ -21,7 +21,7 @@ body {
 	background: linear-gradient(-45deg,  	
     #1d3557, #457b9d, #ffe8d6);
 	background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
+	animation: gradient 25s ease infinite;
 	height: 100vh;
 
     /* background: url(img/layered-bg.svg); */
