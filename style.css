@@ -20,11 +20,27 @@ header {
 }
 
 body {
-    background: linear-gradient(
+    background: #495057;
+    /* background: linear-gradient(
         to bottom right, #22b8cf, #053a43
-    );
+    ); */
     background-image: url("img/layered-bg.svg");
-    background-size: cover;
+    /* background-size: cover; */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center bottom;
+}
+
+.home-background {
+    /* position: fixed; */
+    /* display: flex;
+    flex-direction: column; */
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+.waves {
+    width: 100%;
 }
 
 aside {
