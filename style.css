@@ -1,7 +1,7 @@
 /*
 Colours: 
         Normal      Darker      Lighter
-Main    #1098ad     #0b7285     #e3fafc
+
 Second  #fab005     #f08c00
 
 Greys   #495057     #212529     #868e96
@@ -15,32 +15,16 @@ Greys   #495057     #212529     #868e96
 }
 
 header {
-    padding: 10px 25px;
-    margin-bottom: 25px;
+    padding: 0.6rem 1.5rem;
+    margin-bottom: 1rem;
 }
 
 body {
     background: #495057;
-    /* background: linear-gradient(
-        to bottom right, #22b8cf, #053a43
-    ); */
     background-image: url("img/layered-bg.svg");
-    /* background-size: cover; */
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center bottom;
-}
-
-.home-background {
-    /* position: fixed; */
-    /* display: flex;
-    flex-direction: column; */
-    /* justify-content: center; */
-    /* align-items: center; */
-}
-
-.waves {
-    width: 100%;
 }
 
 aside {
@@ -51,7 +35,7 @@ aside {
 }
 
 h1 {
-    font-family: 'Pangolin', cursive;
+    font-family: 'Pangolin', sans-serif;
     letter-spacing: -0.2rem;
     font-size: 7rem;
     font-weight: 100;
@@ -59,12 +43,16 @@ h1 {
         #faf8f8, #fab008);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    margin-bottom: 0;
 }
 
-/* h2 {
-    color: #1d1d1d;
+h2 {
+    font-family: 'Pangolin', sans-serif;
+    color: #fcc419;
+    font-size: 1.2rem;
+    margin-top: 0;
 }
-
+/*
 h3 {
     color: #808080;
 }
@@ -82,7 +70,6 @@ a:link, a:visited {
     font-size: medium;
     color: #fab008;
     text-decoration: none;   
-    text-shadow: 0.1rem 0.05rem 0.2rem #495057;
 }
 
 a:hover {
@@ -90,9 +77,19 @@ a:hover {
 }
 
 .container {
-    width: 35rem;
+    /* Container appearance */
+    background: linear-gradient(
+        to bottom right, rgba(206, 212, 218, 0.7), rgba(173, 181, 189, 0.5)
+    );
+    overflow: hidden;
+    border-radius: 1.5rem;
+
+    /* Container size and location */
+    width: 40rem;
     min-height: 20rem;
     margin: 0 auto;
+
+    /* Container element properties */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -127,7 +124,14 @@ header {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin: 5rem 0 4rem 0;
+    margin: 4rem 0 3rem 0;
+}
+
+.main-title-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 2rem;
 }
 
 .cloudberry {
