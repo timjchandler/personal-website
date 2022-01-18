@@ -25,6 +25,7 @@ body {
     );
     background-image: url("img/layered-bg.svg");
     background-size: cover;
+    background-position: center top;
     /* background-attachment: fixed; */
 }
 
