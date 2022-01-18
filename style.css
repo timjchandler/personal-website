@@ -1,31 +1,31 @@
-/* General Font */
+/*
+Colours: 
+        Normal      Darker      Lighter
+Main    #1098ad     #0b7285     #e3fafc
+Second  #fab005     #f08c00
+
+Greys   #495057     #212529     #868e96
+*/
+
+
 * {
     font-family: 'Nunito', sans-serif;
     margin: 0;
     padding: 0;
 }
-/* h1, h2, h3, h4, p, a {
-    font-family: Arial, Helvetica, sans-serif;
-} */
 
-/* Background colours */
 header {
-    /* background-color: #f5f5f5; */
     padding: 10px 25px;
     margin-bottom: 25px;
 }
 
 body {
-    /* background-color: #003049; */
-
-	background: linear-gradient(-45deg,  	
-    #1d3557, #457b9d, #ffe8d6);
-	background-size: 400% 400%;
-	animation: gradient 25s ease infinite;
-	height: 100vh;
-
-    /* background: url(img/layered-bg.svg); */
-    /* background-size: cover; */
+    background: linear-gradient(
+        to bottom right, #22b8cf, #053a43
+    );
+    background-image: url("img/layered-bg.svg");
+    background-size: cover;
+    /* background-attachment: fixed; */
 }
 
 aside {
@@ -40,14 +40,13 @@ h1 {
     letter-spacing: -0.2rem;
     font-size: 7rem;
     font-weight: 100;
-    /* color: #ECC046;  */
     background: -webkit-linear-gradient(-45deg, 
-        #faf8f8, #ECC046);
+        #faf8f8, #fab008);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-h2 {
+/* h2 {
     color: #1d1d1d;
 }
 
@@ -58,35 +57,30 @@ h3 {
 h4 {
     color: #808080;
 }
-
+*/
 p {
-    color: gray;
-    margin-bottom: 15px;
-}
-
-a {
+    color: #99e9f2;
+    font-size: large;
 }
 
 a:link, a:visited {
-    font-size: 1rem;
-    color: #ffae00;
+    font-size: medium;
+    color: #fab008;
     text-decoration: none;   
-    text-shadow: 0.1rem 0.05rem 0.2rem #1d3557;
+    text-shadow: 0.1rem 0.05rem 0.2rem #495057;
 }
 
 a:hover {
-    color: #f3ce7e;
-    /* font-weight: bold; */
+    color: #f08c05;
 }
 
 .container {
-    /* width: 600px; */
     width: 35rem;
-    min-height: 40rem;
+    min-height: 20rem;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .copyright {
@@ -106,8 +100,8 @@ a:hover {
     width: 80px;
 }
 
-/* Flex settings*/
-/* Apply flex to the header */
+
+
 header {
     display: flex;
     align-items: center; 
@@ -124,17 +118,4 @@ header {
 .cloudberry {
     width: 15rem;
     height: 15rem;
-}
-
-/* Animation */
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
 }

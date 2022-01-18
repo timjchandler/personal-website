@@ -6,15 +6,15 @@
     <defs>
         <style>
             .cls-1{
-                fill:#84A65A;
+                fill:#74b816;
             }.cls-2{
-                fill:#528941;
+                fill:#5c940d;
             }.cls-3{
-                fill:#FBA924;
+                fill:#fab005;
             }.cls-4{
-                fill:#F78522;
+                fill:#f08c00;
             }.cls-5{
-                fill:#f7941d;
+                fill:#f08c00;
             stroke:#f7941d;stroke-miterlimit:10;
             }
         </style>
