@@ -5,7 +5,7 @@ deployment:
     # Main files
     - /bin/cp index.html $DEPLOYPATH
     - /bin/cp style.css $DEPLOYPATH
-    - /bin/cp main-style.css $DEPLOYPATH
+    - /bin/cp home-style.css $DEPLOYPATH
     # Other pages
     - /bin/cp about.html $DEPLOYPATH
     - /bin/cp projects.html $DEPLOYPATH
