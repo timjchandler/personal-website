@@ -8,5 +8,6 @@ deployment:
     - /bin/cp index.html $DEPLOYPATH
     - /bin/cp about.html $DEPLOYPATH
     - /bin/cp projects.html $DEPLOYPATH
+    - /bin/cp projects-broken.html $DEPLOYPATH
     # Images
     - /bin/cp -R img $DEPLOYPATH
