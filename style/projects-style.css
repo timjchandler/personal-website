@@ -18,8 +18,3 @@ button {
     grid-column: span 2;
 }
 
-.double-button {
-    display: flex;
-    justify-content: space-between;
-    gap: 1rem;
-}
