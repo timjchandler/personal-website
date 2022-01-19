@@ -7,10 +7,19 @@
         <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Pangolin&display=swap" rel="stylesheet">
         <link href="style/style.css" rel="stylesheet" />
         <link href="style/projects-style.css" rel="stylesheet" />
+        <link href="style/background-animation.css" rel="stylesheet" />
         <title>Projects</title>
         <link rel="icon" href="img/cloudberry.svg" type="image/x-icon">
     </head>
     <body>
+        <!-- Testing animation -->
+        <div class="cb cb--1"></div>
+        <div class="cb cb--2"></div>
+        <div class="cb cb--3"></div>
+        <div class="cb cb--4"></div>
+        <div class="cb cb--5"></div>
+        <div class="cb cb--6"></div>
+        <!-- End animation test -->
         <header>
             <div class="logo-title">
                 <img class="cloudberry" src="img/cloudberry.svg" alt="cloudberries logo"/>
@@ -23,41 +32,105 @@
             </nav>
         </header>
         <article class="article-body">
-            <section>
-                <h2>cloudberries.uk</h2>
-                <p>
-                    This website! As you can probably tell, it is a work in progress. I'm trying to improve my HTML, CSS and JavaScript through designing and building this site. 
-                </p>
+            <section class="section-break">
+                <h1 class="h1--dark">ongoing projects</h1>
             </section>
             <section>
-                <h2>maximum travel time</h2>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, eius perspiciatis tenetur ad aliquid quidem fugiat reiciendis architecto voluptas incidunt modi eum distinctio error deserunt maxime sunt sed suscipit, explicabo excepturi inventore ducimus officiis quo, harum beatae? Facilis ea eum expedita quos, officia sunt velit autem fugit enim laborum mollitia.
-                </p>
+                <div class="section-header">
+                    <h2>cloudberries.uk</h2>
+                    <img class="section-img" src="img/cloudberry.svg" alt="cloudberry logo as placeholder">                
+                    <h4>ongoing</h4>
+                </div>
+                <div class="section-body">
+                    <p>
+                        This website! As you can probably tell, it is a work in progress. I'm trying to improve my HTML, CSS and JavaScript through designing and building this site. 
+                    </p>
+                    <button onclick=" window.open('#', '_blank')">
+                        <p class="button-text">you're already on the website!</p>
+                    </button>
+                </div>
             </section>
             <section>
-                <h2>honey I'm home</h2>
+                <div class="section-header">
+                    <h2>maximum travel time</h2>
+                    <img class="section-img" src="img/cloudberry.svg" alt="cloudberry logo as placeholder">                
+                    <h4>ongoing</h4>
+                </div>
                 <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum totam laudantium quis incidunt deserunt, rerum excepturi necessitatibus quidem quibusdam repudiandae saepe eos? Aliquid illum tenetur aspernatur iure iusto saepe? Enim, esse, ut debitis labore quia quisquam, similique autem quis pariatur reprehenderit commodi quo assumenda ratione.
+                    This is a calculator allowing you to see how many more days you are allowed to stay within the EEA when travelling from outside. <br>
+                    Currently it is only allowed for a person to stay 90 days within a rolling 180 day window. This calculator lets you enter any intended travel and see how much allowance remains.<br>
+                    Is this useful for anyone? Maybe. Either way it's a simple project that I'm working on in Rust using web-assembly. 
+
                 </p>
+                <div class="double-button">
+                    <button onclick=" window.open('#')">
+                        <p class="button-text">calculator</p>
+                    </button>
+                    <button onclick=" window.open('#')">
+                        <p class="button-text">code</p>
+                    </button>
+                </div>
+            </section>
+            <section>
+                <div class="section-header">
+                    <h2>honey I'm home</h2>
+                    <img class="section-img" src="img/cloudberry.svg" alt="cloudberry logo as placeholder">                
+                    <h4>ongoing</h4>
+                </div>
+                <p>
+                    This is the main game I'm working on at the moment. It is currently in a very early state, I am still working on level design and mechanics. 
+                    <br>For now, the game is being developed in Unity. 
+                    <br>Soon I intend to start a development blog.
+                </p>
+                <button onclick=" window.open('#')">
+                    <p class="button-text">blog</p>
+                </button>
             </section>
             <section class="section-break">
                 <h1>completed projects</h1>
             </section>
             <section>
-                <h2>tax vs. trade</h2>
-                <p>
-
-                </p>
-                <a href="img/tax-or-trade.pdf">paper</a>
-                <a href="https://github.com/timjchandler/tax-or-trade">code</a>
+                <div class="section-header">
+                    <h2>tax vs. trade</h2>
+                    <img class="section-img" src="img/carbon.png" alt="logo for tax vs trade project">                
+                    <h4>July 2021</h4>
+                </div>
+                <div class="section-body">
+                    <p>
+                        Which is better for reducing CO2 emissions: carbon tax, or cap and trade systems? 
+                        <br>In this project I created an agent based model to simulate power companies and their interactions with one another with varying carbon dioxide reduction measures applied.<br>
+                        This was a really interesting project for me, both in implementing an agent based system from the ground up and also in the surrounding research.<br>
+                        The system itself is built in Java, with an interface written in python, using python notebooks. <br>
+                        The paper I wrote on the model is also linked below.
+                    </p>
+                    <div class="double-button">
+                        <button onclick=" window.open('img/tax-or-trade.pdf', '_blank')">
+                            <p class="button-text">paper</p>
+                        </button>
+                        <button onclick=" window.open('https://github.com/timjchandler/tax-or-trade', '_blank')">
+                            <p class="button-text">code</p>
+                        </button>
+                    </div>
+                </div>
             </section>
             <section>
-                <h2>expert system: sentencing</h2>
-                <p>
-
-                </p>
-                <a href="https://timjchandler.github.io/ExpertSystem/">more</a>
+                <div class="section-header">
+                    <h2>expert system</h2>
+                    <img class="section-img" src="img/sentencing.svg" alt="logo for sentencing project">
+                    <h4>January 2021</h4>
+                </div>
+                <div class="section-body">
+                    <p>
+                        An expert system built in Java for a practical course during my bachelors degree. The system gives a sentence estimate for someone convicted of robbery under the Swiss legal system.<br>
+                        I really enjoyed making this, as it was the first time I made an application of this type and scale. It was also fascinating to discover more about the law, as I was working with a lawyer to ensure
+                        accuracy of the project.<br>
+                        That said, the end result is still very much a prototype and its outputs should be taken with a grain of salt.<br>
+                        The full documentation and code may be found on the GitHub pages site linked below. There's also a download link for if you've been breaking the law in Switzerland, or are just interested.
+                    </p>
+                    <button onclick=" window.open('https://timjchandler.github.io/ExpertSystem/', '_blank')">
+                        <p class="button-text">more info</p>
+                    </button>
+                </div>
             </section>
         </article>
     </body>

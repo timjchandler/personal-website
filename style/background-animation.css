@@ -1,0 +1,74 @@
+.cb {
+    background-image: url("../img/cloudberry.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: -1;
+}
+
+.cb--1 {
+    background-image: url("../img/cloudberry.svg");
+    min-width: 10rem;
+    min-height: 10rem;
+    left: 20%;
+    animation:cb-anim 10s linear infinite;
+}
+
+.cb--2 {
+    min-width: 9rem;
+    min-height:9rem;
+    opacity: 0.5;
+    left: 5%; 
+    animation:cb-anim 12s linear infinite;
+    animation-delay: -3s;
+}
+
+.cb--3 {
+    min-width: 8rem;
+    min-height:8rem;
+    left: 70%;
+    animation:cb-anim 12.5s linear infinite;
+    animation-delay: -7s;
+}
+
+.cb--4 {
+    min-width: 7rem;
+    min-height:7rem;
+    left: 85%;
+    animation:cb-anim 13s linear infinite;
+    animation-delay: -1s;
+}
+
+.cb--5 {
+    min-width: 6.5rem;
+    min-height: 6.5rem;
+    left: 15%;
+    animation:cb-anim 14s linear infinite;
+    animation-delay: -11s;
+}
+
+.cb--6 {
+    min-width: 6rem;
+    min-height: 6rem;
+    left: 50%;
+    animation:cb-anim 15s linear infinite;
+    animation-delay: -10s;
+}
+
+@keyframes cb-anim {
+    0% {
+        top: 0%;
+        rotate: 190deg;
+        opacity: 0;
+    }
+    15% {
+        opacity: 0.5;
+    }
+    85% {
+        opacity: 0.5;
+    }
+    100% {
+        top: 80%;
+        rotate: -210deg;
+        opacity: 0;
+    }
+}

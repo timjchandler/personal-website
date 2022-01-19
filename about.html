@@ -6,10 +6,19 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Pangolin&display=swap" rel="stylesheet">
         <link href="style/style.css" rel="stylesheet" />
+        <link href="style/background-animation.css" rel="stylesheet" />
         <title>About</title>
         <link rel="icon" href="img/cloudberry.svg" type="image/x-icon">
     </head>
     <body>
+        <!-- Testing animation -->
+        <div class="cb cb--1"></div>
+        <div class="cb cb--2"></div>
+        <div class="cb cb--3"></div>
+        <div class="cb cb--4"></div>
+        <div class="cb cb--5"></div>
+        <div class="cb cb--6"></div>
+        <!-- End animation test -->
         <header>
             <div class="logo-title">
                 <img class="cloudberry" src="img/cloudberry.svg" alt="cloudberries logo"/>
@@ -23,34 +32,48 @@
         </header>
         <article>
             <header class="article-header">
-                <img src="img/tjc-standing.jpg" alt="Image of Tim Chandler" width="200">
+                <img src="img/tjc-standing.jpg" alt="Image of me (Tim) during a comedy show" width="200">
                 <h3>
-                    I'm a masters student in artificial intelligence at the university of Edinburgh. <span class="br-med"></span>
+                    I'm a masters student in artificial intelligence at the university of Edinburgh. <br>
                     This website is where I will host AI projects, games and any other things that I work on, or think are interesting.
                 </h3>
             </header>
-            <div class="article-body">
-                <section>
-                    <h2>programming</h2>
-                    <p>You can find me on GitLab, although I have only recently switched to using it so there is currently very little to see. I mostly write in Java, C++ and Python, however I am also exploring other languages such as JavaScript and Rust.</p>
-                    <a href="https://gitlab.com/timchandler">GitLab</a>
-                </section>
-                <section>
-                    <h2>computer graphics</h2>
-                    <p>I create animations and 3D models for games and Architectural Visualisation with Blender. Whilst there are not many currently hosted here, I intend to add more to this website over time.</p>
-                    <a href="#">Portfolio</a>
-                </section>
-                <section>
-                    <h2>games</h2>
-                    <p>I am currently developing games using the Unreal 4 engine. My main project, currently titled <em>Honey I'm Home</em> will have ongoing progress updates on its blog.</p>
-                    <a href="#">Blog</a>
-                </section>
-                <section>
-                    <h2>comedy</h2>
-                    <p>I was a member of Strager Things Have Happened for two years, performing shows both in person and online. I was also a founding member of No Restrictions standup comedy group.</p>
-                    <a href="https://www.strangerthings.nl/">Stranger Things Have Happened</a>
-                </section>
-            </div>
+            <section>
+                <h2>programming</h2>
+                <p>
+                    I enjoy playing around with code, writing programs and learning new languages. Currently I'm to learning Rust, as well as the key web languages. I'm also continuously improving my python, c++ and java. <br>You can see some of my work on github. I intend to try and work on a small project each month in 2022. Let's see how long this intention lasts!
+                </p>
+                <button onclick=" window.open('https://www.github.com/timjchandler', '_blank')">
+                    <p class="button-text">My GitHub</p>
+                    <img class="button-logo" src="img/github.svg" alt="GitHub logo">
+                </button>
+            </section>
+            <section>
+                <h2>computer graphics</h2>
+                <p>
+                    It's always satisfying to be able to really see the results of what you're working on. Computer graphics is great for that, even when mistakes are made and a previously innocuous model turns into an abomination of colours and triangles.<br>
+                    I do a decent amount of messing about in blender, but particularly enjoy working with shaders, both through node editors and direct programming. There are just so many more possibilities for visual monstrosities!
+                </p>
+                <!-- <a href="#">Portfolio</a> -->
+            </section>
+            <section>
+                <h2>games</h2>
+                <p>
+                    Games are a great opportunity for giving a bit more life to some of the computer graphics projects.<br> So far I haven't made anything that I'm happy enough with to put out into the world, but there are a couple of projects that are nearing that stage. I'll update the website with them once they're done.
+                </p>
+                <!-- <a href="#">Blog</a> -->
+            </section>
+            <section>
+                <h2>comedy</h2>
+                <p>
+                    Before moving to Edinburgh I was part of the comedy group Stranger Things Have Happened. It was a lot of fun, even if the pandemic made live shows more difficult/non-existant.<br>
+                    I'm hoping to get back into live comedy again soon. But in any case, Stranger Things Have Happened are still going strong, and well worth checking out. 
+                </p>
+                <button onclick=" window.open('https://www.strangerthings.nl', '_blank')">
+                    <p class="button-text">Stranger Things Have Happened</p>
+                    <img class="button-logo" src="img/sthh.png" alt="Stranger Things Have Happened logo">
+                </button>
+            </section>
         </article>
     </body>
 </html>
