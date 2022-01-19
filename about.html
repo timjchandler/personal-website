@@ -1,49 +1,56 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Pangolin&display=swap" rel="stylesheet">
+        <link href="main-style.css" rel="stylesheet" />
         <title>About</title>
+        <link rel="icon" href="img/cloudberry.svg" type="image/x-icon">
     </head>
     <body>
         <header>
-            <h1>About</h1>
+            <div class="logo-title">
+                <img class="cloudberry" src="img/cloudberry.svg" alt="cloudberries logo"/>
+                <h1>about</h1>
+            </div>
             <nav>
-                <button>
-                    <a href="index.html">Home</a>
-                </button>
-                <a href="#">About</a>
-                <a href="projects.html">Projects</a>
+                <a class="top-menu" href="index.html">home</a>
+                <a class="top-menu" href="#">about</a>
+                <a class="top-menu" href="projects.html">projects</a>
             </nav>
         </header>
         <article>
-            <header>
+            <header class="article-header">
                 <img src="img/tjc-standing.jpg" alt="Image of Tim Chandler" width="200">
-                <p>
-                    I am currently studying a Masters degree in Artificial Intelligence at the University of Edinburgh. I recently completed my Bachelors, also in AI at the University of Groningen where I also worked as a teaching assistant accross multiple courses 
-                    and held the position of Chair within the student delegation of the Programme Committee for the 2020-21 academic year.
-                    
-                    Within Groningen I was active within the international comedy scene. This was predominantly as a member of the improv group Stranger Things Have Happened. 
-                </p>
+                <h3>
+                    I'm a masters student in artificial intelligence at the university of Edinburgh. <span class="br-med"></span>
+                    This website is where I will host AI projects, games and any other things that I work on, or think are interesting.
+                </h3>
             </header>
-            <section>
-                <h2>Comedy</h2>
-                <p>I was a member of Strager Things Have Happened for two years, performing shows both in person and online. I was also a founding member of No Restrictions standup comedy group.</p>
-                <a href="https://www.strangerthings.nl/">Stranger Things Have Happened</a>
-            </section>
-            <section>
-                <h2>GitLab</h2>
-                <p>You can find me on GitLab, although I have only recently switched to using it so there is currently very little to see. I mostly write in Java, C++ and Python, however I am also exploring other languages such as JavaScript and Rust.</p>
-                <a href="https://gitlab.com/timchandler">GitLab</a>
-            </section>
-            <section>
-                <h2>Computer Graphics</h2>
-                <p>I create animations and 3D models for games and Architectural Visualisation with Blender. Whilst there are not many currently hosted here, I intend to add more to this website over time.</p>
-                <a href="#">Portfolio</a>
-            </section>
-            <section>
-                <h2>Game Development</h2>
-                <p>I am currently developing games using the Unreal 4 engine. My main project, currently titled <em>Honey I'm Home</em> will have ongoing progress updates on its blog.</p>
-                <a href="#">Blog</a>
-            </section>
+            <div class="article-body">
+                <section>
+                    <h2>programming</h2>
+                    <p>You can find me on GitLab, although I have only recently switched to using it so there is currently very little to see. I mostly write in Java, C++ and Python, however I am also exploring other languages such as JavaScript and Rust.</p>
+                    <a href="https://gitlab.com/timchandler">GitLab</a>
+                </section>
+                <section>
+                    <h2>computer graphics</h2>
+                    <p>I create animations and 3D models for games and Architectural Visualisation with Blender. Whilst there are not many currently hosted here, I intend to add more to this website over time.</p>
+                    <a href="#">Portfolio</a>
+                </section>
+                <section>
+                    <h2>games</h2>
+                    <p>I am currently developing games using the Unreal 4 engine. My main project, currently titled <em>Honey I'm Home</em> will have ongoing progress updates on its blog.</p>
+                    <a href="#">Blog</a>
+                </section>
+                <section>
+                    <h2>comedy</h2>
+                    <p>I was a member of Strager Things Have Happened for two years, performing shows both in person and online. I was also a founding member of No Restrictions standup comedy group.</p>
+                    <a href="https://www.strangerthings.nl/">Stranger Things Have Happened</a>
+                </section>
+            </div>
         </article>
     </body>
 </html>
