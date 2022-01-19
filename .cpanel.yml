@@ -2,11 +2,10 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/clouksjx/public_html/
-    # Main files
+    # Stylesheets 
+    - /bin/cp -R style $DEPLOYPATH
+    # Pages
     - /bin/cp index.html $DEPLOYPATH
-    - /bin/cp style.css $DEPLOYPATH
-    - /bin/cp home-style.css $DEPLOYPATH
-    # Other pages
     - /bin/cp about.html $DEPLOYPATH
     - /bin/cp projects.html $DEPLOYPATH
     # Images
