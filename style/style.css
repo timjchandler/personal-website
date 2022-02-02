@@ -5,7 +5,21 @@
 }
 
 body {
-    background: #343a40;
+    /* background: #343a40; */
+    /* New style tryout*/
+    background-color: #2292a4;
+    background-image: radial-gradient(
+        circle at top right,
+        #f49f0a, 
+        transparent
+    ),
+    radial-gradient(
+        20% 50% at top left,
+        #bdbf09, 
+        transparent
+    );
+    background-attachment: fixed;
+    /* New style end */
     padding-bottom: 3rem;
     border-bottom: 1rem solid #f08c05;
 }
@@ -13,7 +27,8 @@ body {
 h1 {
     font-family: 'Pangolin', sans-serif;
     font-size: 2rem;
-    color: #fcc419;
+    /* color: #fcc419; */
+    color: #faf8f8;
 }
 
 .h1--dark {
@@ -78,26 +93,46 @@ header {
 
 a:link, a:visited {
     font-size: medium;
-    color: #fab008;
+    /* color: #fab008; */
+    color: #faf8f8;
     text-decoration: none;   
 }
 
 a:hover {
-    color: #f08c05;
+    /* color: #f08c05; */
+    color: #2292a4;
 }
 
 /* Main body child class properties */
 article {
     /* Appearance */
-    background-color: #212529ee;
-    background-image: url(../img/small-waves.svg);
+
+
+    /* New style tryout*/
+    background-color: #faf8f8;
+    background-image: radial-gradient(
+        circle at bottom right,
+        rgba(255, 183, 0, 0.4), 
+        transparent
+    ),
+    radial-gradient(
+        20% 50% at top left,
+        rgba(1, 1, 1, 0.2), 
+        transparent
+    );
+    border-radius: 0.5rem;
+    /* New style end*/
+
+
+    /* background-color: #212529ee; */
+    /* background-image: url(../img/small-waves.svg); */
     background-repeat: no-repeat;
 
     /* Dimensions */
     margin: auto;
     width: 45rem;
     padding: 2.5rem;
-    border-radius: 2.5rem;
+    /* border-radius: 2.5rem; */
 
     /* Display properties */
     display: grid;
@@ -110,7 +145,7 @@ section {
         135deg, rgba(40, 46, 52, 0.7), #343a40
     ); 
     padding: 1rem;
-    border-radius: 0.5rem;
+    border-radius: 0.25rem;
     display: flex;
     flex-direction: column;
 }

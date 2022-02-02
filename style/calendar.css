@@ -1,0 +1,30 @@
+.year-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    background-color: aqua;
+}
+
+.month-wrapper {
+    /* TEMP */
+    min-width: 15rem;
+    min-height: 15rem;
+    max-width: 15rem;
+    max-height: 15rem;
+    background-color: blueviolet;
+    /* END TEMP */
+
+    border-radius: 0.5rem;
+    
+    /* Set up grid of days */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0.2rem;
+}
+
+.day {
+    width: 1.5rem;
+    height: 1.5rem;
+
+    background-color: cadetblue;
+}

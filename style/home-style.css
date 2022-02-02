@@ -1,8 +1,4 @@
 body {
-    background-image: url("../img/layered-bg.svg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center bottom;
     border-bottom: none;
 }
 
@@ -14,6 +10,10 @@ h1 {
         #faf8f8, #fab008);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+h2 {
+    color: #faf8f8;
 }
 
 .main-title {
