@@ -1,1 +1,0 @@
-/Users/timchandler/Documents/Personal/Website/programs/article-formatter/target/debug/article-formatter: /Users/timchandler/Documents/Personal/Website/programs/article-formatter/src/article/body.rs /Users/timchandler/Documents/Personal/Website/programs/article-formatter/src/article.rs /Users/timchandler/Documents/Personal/Website/programs/article-formatter/src/main.rs

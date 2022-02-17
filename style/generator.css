@@ -1,0 +1,26 @@
+article {
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+input {
+    width: 45rem;
+    margin-bottom: 2rem;
+}
+
+button {
+    justify-content: center;
+}
+
+.output {
+    width: 45rem;
+    border-radius: 0.2rem;
+    background-color: #1d1d1d;
+    color: gold;
+}

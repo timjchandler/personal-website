@@ -36,9 +36,9 @@ h1 {
 }
 
 h2 {
-    font-family: 'Pangolin', sans-serif;
+    /* font-family: 'Pangolin', sans-serif; */
     color: #f08c05; 
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 h3 {
@@ -222,3 +222,87 @@ button:hover {
 .button-text {
     color: #f1f3f5;
 }
+
+/* ------- Test section ------------------------------------------- */
+
+.article-body {
+    padding: 1rem;
+    background-color: #faf8f8;
+    background-image: none;
+    border-radius: 0.2rem;
+    display: flex;
+    flex-direction: column;
+    width: 50rem;
+}
+
+.article-entry {
+    display: flex;
+    flex-direction: row;
+}
+
+.entry-header {
+    display: flex;
+    flex-direction: column;
+    min-width: 8rem;
+    align-items: flex-start;
+    margin-bottom: 0;
+}
+
+.entry-title {
+    color: #343a40;
+}
+
+.entry-date {
+    font-size: 0.5rem;
+    color: #868e96;
+    font-style: italic;
+}
+
+.entry-logo {
+    width: 5rem;
+    margin-top: 2rem;
+}
+
+.entry-body {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.footnote {
+    min-width: 8rem;
+    padding-left: 0.5rem;
+    color: #8a817c;
+    font-size: 0.8rem;
+}
+
+
+/* .article-body {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10rem;
+    background-color: #faf8f8;
+    background-image: none;
+    border-radius: 0.2rem;
+}
+
+.article-body-element {
+    display: flex;
+    align-items: flex-start;
+}
+
+.element-title {
+    width: 15rem;
+    color: #1d1d1d;
+    font-size: 1.2rem;
+}
+
+.element-body {
+
+}
+
+.element-footnote {
+    font-size: 0.6rem;
+    color: #868e96;
+    width: 15rem;
+} */
