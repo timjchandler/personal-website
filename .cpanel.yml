@@ -6,8 +6,6 @@ deployment:
     - /bin/cp -R style $DEPLOYPATH
     # Pages
     - /bin/cp index.html $DEPLOYPATH
-    - /bin/cp about.html $DEPLOYPATH
-    - /bin/cp projects.html $DEPLOYPATH
-    - /bin/cp projects-broken.html $DEPLOYPATH
+    - /bin/cp -R articles $DEPLOYPATH
     # Images
     - /bin/cp -R img $DEPLOYPATH
