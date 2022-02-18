@@ -6,23 +6,14 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Pangolin&display=swap" rel="stylesheet">
         <link href="style/style.css" rel="stylesheet" />
-        <link href="style/home-style.css" rel="stylesheet" />
         <title>Cloudberries</title>
         <link rel="icon" href="img/cloudberry.svg" type="image/x-icon">
     </head>
     <body>
-        <header>
-            <h2></h2>
-            <!-- <nav>
-                <a class="top-menu" href="#">home</a>
-                <a class="top-menu" href="about.html">about</a>
-                <a class="top-menu" href="projects.html">projects</a>
-            </nav> -->
-        </header>
         <div class="main-title">
             <div class="main-title-text">
                 <h1>cloudberries</h1>
-                <h2>artificial intelligence, games and other stuff</h2>
+                <h2 class="subheading">artificial intelligence, games and other stuff</h2>
             </div>
             <img 
             class="cloudberry"
@@ -33,31 +24,83 @@
 
         <!-- ------ Article start ------------ -->
 
-        <article class="article-body">
+        <article>
+            <!-- Start Entry -->
             <div class="article-entry">
                 <div class="entry-header">
-                    <h2 class="entry-title">Machine Learning</h2>
-                    <h4 class="entry-date">17th February 2022</h4>
-                    <img 
+                    <h2 class="entry-title">
+                        Article Formatter
+                    </h2>
+                    <h4>
+                        February 2022
+                    </h4>
+                    <img
                         class="entry-logo"
                         src="img/cloudberry.svg"
-                        alt="logo alt text"
-                    /> 
+                        alt="Cloudberry Logo"
+                    />
                 </div>
                 <div class="entry-body">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae qui, velit iure reprehenderit tempora numquam iusto, ipsam fugit ea eius non, repellat aperiam! Obcaecati molestias nostrum voluptatum in optio? Quasi facilis alias voluptatem asperiores nam earum nesciunt est accusantium nemo ratione magni iste vero tempora perspiciatis sunt laudantium voluptate veritatis ad, reiciendis aut atque blanditiis aperiam maxime! Vero molestias saepe debitis aliquid culpa quaerat magnam vitae ullam modi, nisi recusandae libero officia enim illo sapiente eum labore mollitia dolorem accusantium maxime voluptas esse nobis dignissimos reprehenderit. Officia in magni dolorem pariatur fugiat odio saepe, nam, voluptas asperiores ipsa commodi quasi!</p>
-                    <p class="footnote">footnote</p>
+                    <p>Why spend a couple of minutes writing out the HTML for one of these stories on the website when it's possible to spend considerably longer automating it!<br>
+                    That was the thought process behind this (very) mini project. In any case, I can now fill in a form and have the body, image path and other details for one of these entries formatted into HTML. So that's nice.<br>
+                    I'm planning on making it more generic so that it is a little more useful. So it might be updated soon.</p>
+                    <p class="footnote"> <a class="foot-link" href="https://cloudberries.uk/img/tax-or-trade.pdf" target="_blank" >GitHub Page</a></p>
                 </div>
             </div>
-        </article>
-        <!-- <article class="article-body">
-            <div class="article-body-element">
-                <p class="element-title">Machine Learning</h3>
-                <p class="element-body">
-                    \Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel quibusdam fugiat optio eaque natus? Ullam, rem provident ratione repellat ipsam facilis quia adipisci suscipit. Odio facilis cumque sapiente necessitatibus dolorem?
-                </p>
-                <p class="element-footnote">Footnote</p>
+            <!-- End Entry -->
+            <!-- Start Entry -->
+            <div class="article-entry">
+                <div class="entry-header">
+                    <h2 class="entry-title">
+                        Tax vs. Trade
+                    </h2>
+                    <h4>
+                        July 2021
+                    </h4>
+                    <img
+                        class="entry-logo"
+                        src="img/carbon.png"
+                        alt="Logo showing power station emissions"
+                    />
+                </div>
+                <div class="entry-body">
+                    <p>Which is better for reducing CO2 emissions: carbon tax, or cap and trade systems?<br>In this project I created an agent based model to simulate power companies and their interactions with one another with varying carbon dioxide reduction measures applied.
+            This was a really interesting project for me, both in implementing an agent based system from the ground up and also in the surrounding research.
+            The system itself is built in Java, with an interface written in python, using python notebooks.
+            The paper I wrote on the model is also linked at the side. </p>
+                    <p class="footnote">
+                        <a class="foot-link" href="https://cloudberries.uk/img/tax-or-trade.pdf" target="_blank">Paper</a><br>
+                        <a class="foot-link" href="https://github.com/timjchandler/tax-or-trade" target="_blank">GitHub Page</a>
+                    </p>
+                </div>
             </div>
-        </article> -->
+            <!-- End Entry -->
+            <!-- Start Entry -->
+            <div class="article-entry">
+                <div class="entry-header">
+                    <h2 class="entry-title">
+                        Expert System
+                    </h2>
+                    <h4>
+                        January 2021
+                    </h4>
+                    <img
+                        class="entry-logo"
+                        src="img/sentencing.svg"
+                        alt="Logo showing Justicia's scales"
+                    />
+                </div>
+                <div class="entry-body">
+                    <p>An expert system built in Java for a practical course during my bachelors degree. The system gives a sentence estimate for someone convicted of robbery under the Swiss legal system.<br>I really enjoyed making this, as it was the first time I made an application of this type and scale. It was also fascinating to discover more about the law, as I was working with a lawyer to ensure accuracy of the project.
+            That said, the end result is still very much a prototype and its outputs should be taken with a grain of salt.<br>
+            The full documentation and code may be found on the GitHub pages site linked at the side. There's also a download link for if you've been breaking the law in Switzerland, or are just interested. </p>
+                    <p class="footnote">
+                        <a class="foot-link" href="https://timjchandler.github.io/ExpertSystem/" target="_blank">GitHub Page</a>
+                    </p>
+                </div>
+            </div>
+            <!-- End Entry -->
+        </article>
+        <p class="copyright">&copy; 2022 Tim Chandler</p>
     </body>
 </html>
