@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@300;400&display=swap" rel="stylesheet"> 
+        <link href="../style/articles.css" rel="stylesheet"/>
+        <link href="../style/tutorials.css" rel="stylesheet"/>
+        <title>Boids</title>
+        <link rel="icon" href="../img/cloudberry.svg" type="image/x-icon">
+    </head>
+    <body>
+        <header>
+            <div class="logo-title">
+                <img class="cloudberry" src="../img/cloudberry.svg" alt="cloudberries logo"/>
+                <!-- <h1>projects</h1> -->
+            </div>
+            <nav>
+                <a class="top-menu" href="/index.html">home</a>
+                <a class="top-menu" href="#">articles</a>
+                <a class="top-menu" href="#">tutorials</a>
+            </nav>
+        </header>
+        <article class="wrapper">
+            <article>
+                <h1>Boids</h1>
+                <img src="../img/tutorials/swallows.svg" alt="Swallows representing boids">
+                <section class="abstract">
+                    <p>
+                       This is a work in progress.<br>
+                       Boids were developed in the 1980's by Craig Reynolds. They simulate the flocking behaviour that is commonly demonstrated by some birds and shoals of fish. 
+                       Reynolds' original paper introducing boids may be found <a href="https://dl.acm.org/doi/10.1145/37402.37406" target="_blank">here</a>.
+                </section>
+                <section>
+                    <h4>Behaviour</h4>
+                </section>
+                <section>
+                    <p>
+                        Boids will continue to move at a constant speed, only able to change direction.
+                        As a group, the boids will move as a flock, with the actions of each individual depending on the actions of the others.<br>
+                        The steering of each individual boid, is dictated by the following rules:
+                    </p>
+                </section>
+                <section>
+                    <img class="left-side" src="../img/tutorials/swallow-single.svg" alt="A single Boid"/>
+                    <div>
+                        <h4 id="agents">Rules</h4>
+                        <ul class="inner">
+                            <li><mark>Separation</mark> The boid will try to stay more than a predefined minimum distance from other boids.</li>
+                            <li><mark>Cohesion</mark> The boid will try to move to the middle of the group of boids.</li>
+                            <li><mark>Alignment</mark>The boid will try to match the direction of travel of other boids within the group.</li>
+                        </ul>
+                    </div>
+                </section>
+                <section>
+                    <p>This is a work in progress...</p>
+                </section>
+            </article>
+    </article>
+        <p class="copyright">&copy; 2022 Tim Chandler</p>
+    </body>
+</html>

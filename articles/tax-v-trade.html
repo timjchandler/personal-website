@@ -7,54 +7,55 @@
         <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@300;400&display=swap" rel="stylesheet"> 
         <link href="../style/articles.css" rel="stylesheet"/>
         <title>Tax vs. Trade</title>
-        <link rel="icon" href="img/cloudberry.svg" type="image/x-icon">
+        <link rel="icon" href="../img/cloudberry.svg" type="image/x-icon">
     </head>
     <body>
+        <article>
+            <h1>Tax vs. Trade</h1>
+            <img src="../img/carbon.png" alt="Tax vs. Trade logo">
+            <section class="abstract">
+                <p>An <a href="#agent-based">agent-based model</a> to compare the efficacy of different emission reduction measures.
+                <br>This page is an overview of the project, containing the motivation, methods used and summary of the results. The full paper may be read <a href="https://cloudberries.uk/img/tax-or-trade.pdf" target="_blank">here</a>. The code may be found on GitHub <a href="https://github.com/timjchandler/tax-or-trade" target="_blank">here</a>.</p>
+            </section>
+            <section>
+                <img src="../img/cloudberry.svg" alt="Carbon Tax"/>
+                <div>
+                    <h4>Carbon Tax</h4>
+                    <ul>
+                        <li>Sets a price per unit of CO2 produced</li>
+                        <li>Incurred cost scales with the amount of CO2</li>
+                        <li>No upper limit on emissions</li>
+                    </ul>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <h4>Cap and Trade</h4>
+                    <ul>
+                        <li>Allocates credits allowing for CO2 production</li>
+                        <li>Provides an upper limit on emissions</li>
+                        <li>Credits may be bought or sold</li>
+                    </ul>
+                </div>
+                <img src="../img/cloudberry.svg" alt="Cap and Trade"/>
+            </section>
+            <section class="break" id="agent-based">
+                <h4>Agent-Based Model</h4>
+            </section>
+            <section>
+                <p>A simulation of multiple agents interacting with one another in order to model possible outcomes.</p>
+            </section>
+            <section>
+                <img 
+                    class="full-size" 
+                    src="../img/tax-v-trade/abm-structure.png" 
+                    alt="The hierarchy of classes within the agent based model"
+                />
+            </section>
+            <section>
+                <p style="font-style: italic;">Unfinished ... More to add ...</p>
+            </section>
+        </article>
+        <p class="copyright">&copy; 2022 Tim Chandler</p>
     </body>
-    <article>
-        <h1>Tax vs. Trade</h1>
-        <img src="../img/carbon.png" alt="Tax vs. Trade logo">
-        <section class="abstract">
-            <p>An <a href="#agent-based">agent-based model</a> to compare the efficacy of different emission reduction measures.
-            <br>This page is an overview of the project, containing the motivation, methods used and summary of the results. The full paper may be read <a href="https://cloudberries.uk/img/tax-or-trade.pdf" target="_blank">here</a>. The code may be found on GitHub <a href="https://github.com/timjchandler/tax-or-trade" target="_blank">here</a>.</p>
-        </section>
-        <section>
-            <img src="../img/cloudberry.svg" alt="Carbon Tax"/>
-            <div>
-                <h4>Carbon Tax</h4>
-                <ul>
-                    <li>Sets a price per unit of CO2 produced</li>
-                    <li>Incurred cost scales with the amount of CO2</li>
-                    <li>No upper limit on emissions</li>
-                </ul>
-            </div>
-        </section>
-        <section>
-            <div>
-                <h4>Cap and Trade</h4>
-                <ul>
-                    <li>Allocates credits allowing for CO2 production</li>
-                    <li>Provides an upper limit on emissions</li>
-                    <li>Credits may be bought or sold</li>
-                </ul>
-            </div>
-            <img src="../img/cloudberry.svg" alt="Cap and Trade"/>
-        </section>
-        <section class="break" id="agent-based">
-            <h4>Agent-Based Model</h4>
-        </section>
-        <section>
-            <p>A simulation of multiple agents interacting with one another in order to model possible outcomes.</p>
-        </section>
-        <section>
-            <img 
-                class="full-size" 
-                src="../img/tax-v-trade/abm-structure.png" 
-                alt="The hierarchy of classes within the agent based model"
-            />
-        </section>
-        <section>
-            <p style="font-style: italic;">Unfinished ... More to add ...</p>
-        </section>
-    </article>
 </html>

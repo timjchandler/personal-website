@@ -1,0 +1,65 @@
+/* Expands on and modifies articles.css */
+
+h1 {
+    background: -webkit-linear-gradient(-45deg, 
+        #e67700, #9d0208);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h4 {
+    color: #9d0208;
+}
+
+a {
+    color: #e67700;
+}
+
+a:hover {
+    color: #9d0208;
+}
+
+article.wrapper {
+    background-color: #9d0208;
+    background-image: radial-gradient(
+        circle at bottom right,
+        #e67700,
+        transparent
+    );
+}
+
+section.abstract {
+    border-bottom: 0.1rem dotted #e67700;
+    border-top: 0.1rem dotted #e67700;
+}
+
+section.break {
+    border-top: 0.1rem dotted #e67700;
+}
+
+header {
+    background-image: linear-gradient(
+        to left,
+        #9d0208,
+        #fff9db
+    );
+}
+
+.top-menu:hover {
+    color: #e67700;
+}
+
+ul.inner {
+    width: 25rem;
+    padding-top: 1rem;
+    padding-left: 3rem;
+}
+
+mark {
+    /* font-style: italic; */
+    background-color:#ffc078; 
+    border-radius: 0.2rem;
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+    padding-bottom: 0.1rem;
+}

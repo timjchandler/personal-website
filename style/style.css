@@ -16,6 +16,8 @@ body {
         #9d0208, 
         transparent
     );
+    /* background-image: url(../img/cloudberry.png); */
+    background-size: 100%;
     background-attachment: fixed;
 }
 
@@ -24,18 +26,26 @@ h1 {
     letter-spacing: -0.2rem;
     font-size: 7rem;
     font-weight: 100;
+    /* color: #faf8f8; */
     background: -webkit-linear-gradient(-45deg, 
         #faf8f8, #fab008);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-h2 {
-    color: #343a40;
+h3 {
+    font-size: 2rem;
+    font-weight: 300;
+    padding-top: 2rem;
+    margin: auto;
+    background: -webkit-linear-gradient(-45deg, 
+        #9d0208, #fab008);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-h3 {
-
+h2 {
+    color: #5d5d5d;
 }
 
 h4 {
@@ -60,7 +70,7 @@ br {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin: 4rem 0 3rem 0;
+    margin: 4rem 0 5rem 0;
 }
 
 .main-title-text {
@@ -148,4 +158,13 @@ a:hover {
     color: #8a817c;
     font-size: 0.8rem;
     text-align: right;
+}
+
+a {
+    color: #e67700;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #9d0208;
 }
