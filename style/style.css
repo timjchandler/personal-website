@@ -192,3 +192,7 @@ div.abstract {
 a.abs-link {
     color: #a61e4d;
 }
+
+a.abs-link:hover {
+    color:  #495057; 
+}
