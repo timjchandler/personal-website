@@ -136,8 +136,13 @@ ul {
     /* color: #faf8f8; */
 }
 
+ul.with-image {
+    width: auto;
+}
+
 li {
     padding-bottom: 0.8rem;
+    color: #495057; 
 }
 
 .copyright {
