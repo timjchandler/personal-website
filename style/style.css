@@ -168,3 +168,27 @@ a {
 a:hover {
     color: #9d0208;
 }
+
+img.title-image {
+    /* padding: auto; */
+    display: block;
+    margin: auto;
+    margin-bottom: 8rem;
+    margin-top: 4rem;
+    width: 30rem;
+}
+
+div.abstract {
+    width: 25rem;
+    color: #e67700;
+    margin: auto;
+    padding: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-bottom: 0.08rem dotted #d9480f;
+    border-top: 0.08rem dotted #d9480f;
+}
+
+a.abs-link {
+    color: #a61e4d;
+}
