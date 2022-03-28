@@ -7,7 +7,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@300;400&display=swap" rel="stylesheet"> 
         <link href="../style/articles.css" rel="stylesheet"/>
         <link href="../style/tutorials.css" rel="stylesheet"/>
-        <title>Boids</title>
+        <title>Forest Fires</title>
         <link rel="icon" href="../img/cloudberry.svg" type="image/x-icon">
     </head>
     <body>
@@ -27,7 +27,261 @@
                 <h1>Forest Fires</h1>
                 <img src="../img/abm/forest-fire.svg" alt="An image of a tree on fire">
                 <section class="abstract">
-                    <p>This is a work in progress...</p>
+                    <p>An introduction to multi agent systems with NetLogo building on the Forest Fires example project. <br>This is a work in progress...</p>
+                </section>
+                <section>
+                    <div>
+                        <h3>Contents</h3>
+                        <ul class="contents">
+                            <li><a href="#setup">Setup</a>
+                                <ul>
+                                    <li><a href="#download">Downloading NetLogo</a></li>
+                                    <li><a href="#install">Installation</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#loading">Loading the Base Model</a></li>
+                            <li><a href="#changes">Making Changes</a></li>
+                            <li><a href="#closing">Closing Thoughts</a></li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="break" id="setup">
+                    <div>
+                        <h3>Setup</h3>
+                        <p>Here we will download and setup the NetLogo software.</p>
+                    </div>
+                </section>
+                <section class="right-side" id="download">
+                    <div>
+                        <h4>Downloading NetLogo</h4>
+                        <p>
+                            NetLogo is available for free <a href="https://ccl.northwestern.edu/netlogo/download.shtml" target="_blank">here</a>
+                            <br>
+                            I would recommend downloading the latest version. The system requirements for this version are fairly minimal, working on Windows systems dating back to Vista, MacOS 10.8.3 and most Debian based Linux distros. 
+                            <br>
+                            Personally, I have run it with no issues on Ubuntu 20.04 and MacOS Big Sur and Monterey.
+                        </p>
+                    </div>
+                    <img 
+                        class="right-side" 
+                        src="../img/tutorials/netlogo.png" 
+                        alt="The NetLogo Logo: A red arrowhead on a green and blue background"
+                    >
+                </section>
+                <section class="left-side" id="install">
+                    <img 
+                        class="left-side"
+                        src="../img/abm/forest-fire.svg" 
+                        alt="An image of a tree on fire">
+                    <div>
+                        <h4>Installation</h4>
+                        <p>
+                            The download should be fairly quick, with the total size being only 200-250 MB depending on the system. 
+                            <br>
+                            Once the download is complete installation is very simple.
+                            <br> 
+                            On MacOS you simply locate the NetLogo application file within the downloaded folder and run it. 
+                            <br>
+                            Windows, Linux: TODO
+                        </p>
+                    </div>
+                </section>
+                <section class="right-side" id="issues">
+                    <div>
+                        <h4>Resolving Issues on Installation</h4>
+                        <p>
+                            One issue that I have had on installation is that the default language is set to Chinese. Of course, this is only an issue if you don't speak Chinese (I don't). Otherwise, great!
+                            <br>
+                            To change the language you need to go to the preferences. For this it is probably simplest to use keyboard shortcuts if you don't know the language:
+                            <br><br>
+                            <li>'⌘' + ',' on MacOS</li>
+                            <li>TODO: Windows</li>
+                            <li>TODO: Linux</li>
+                        </p>
+                    </div>
+                    <img 
+                        class="right-side"
+                        src="../img/abm/forest-fire.svg" 
+                        alt="An image of a tree on fire">
+                    <div>
+                </section>
+                <section>
+                    <p>
+                        In the preferences, the first option is language, select your preferred language from the drop down and then press the left hand button at the bottom to confirm. 
+                        <br>
+                        I have been told by friends who have used NetLogo that they never had this issue, however it has happened consistently for me. 
+                    </p>
+                </section>
+                <section class="break" id="loading">
+                    <div>
+                        <h3>Loading the Base Model</h3>
+                        <p>Here we will load and run the base Forest Fire model. This will help to gain some familiarity with the NetLogo interface.</p>
+                    </div>
+                </section>
+                <section class="left-side">
+                    <img 
+                        class="left-side"
+                        src="../img/tutorials/forest-load-image.png" 
+                        alt="An image of the Fire simulation in the models library">
+                    <div>
+                    <p>
+                        Go to <em>File</em> in the top menu and select <em>Models Library</em>. 
+                        Within this expand the <em>Sample Models</em> tab and then <em>Earth Science</em>. From here select and open the <em>Fire</em> model.
+                        <br>
+                        You will be greeted by a large black square, a <em>density</em> slider, <em>setup</em> and <em>go</em> buttons as well as a <em>percent burned</em> field.
+                    </p>
+                </section>
+                <section>
+                    <div>
+                        <img 
+                        class="full-size"
+                        src="../img/tutorials/forest-opened.png"
+                        alt="The model as it appears immediately after loading"
+                        >
+                        <p class="img-caption">
+                            The model as it appears when initially loaded
+                        </p>
+                    </div>
+                </section>
+                <section>
+                    <p>
+                        You will also notice some tabs at the top, giving you access to information about the model as well as its code. We will look more at these later. 
+                        <br>
+                        First, lets start some fires! In order to burn the forest, you need a forest to burn. So press the <em>setup</em> button.
+                        <br>
+                        This will generate your forest. As I'm sure you can tell from the almost lifelike graphics, the green pixels represent trees, with the black pixels representing empty space.
+                        If you pay close attention, you might notice a red line of pixels down the left hand side. That is the initial fire.
+                        <br> 
+                        The placement of the trees is randomly set each time the model is set up. You can also change the ratio of trees to empty space using the <em>density</em> slider. For now lets leave it at its default (57% if you've already changed it).
+                    </p>
+                </section>
+                <section class="break">
+                    <h3>Running the Model</h3>
+                </section>
+                <section class="right-side">
+                    <div>
+                        <h4>
+                            Running the default settings
+                        </h4>
+                        <p>
+                            With the model loaded and set up, and your beautiful forest planted it's time to burn it down. 
+                            <br>
+                            In what will probably not come as a surprise to you, the model is started by pressing <em>go</em>.
+                            <br>
+                            You should see the fire move across from the left towards the right, most likely burning between 10% and 25% of the forest. 
+                            <br>
+                            It is worth running it a few times in order to get a good idea of the expected coverage. You can speed it up by adjusting the slider at the top above the <em>ticks</em> counter. 
+                            <br>
+                            Each time you want to rerun the model you have to press <em>setup</em> first to generate a new forest.
+                        </p>
+                    </div>
+                    <div>
+                        <img
+                            class="right-side"
+                            src="../img/tutorials/forest-setup.png"
+                            alt="The initial model after setup"
+                        >
+                        <img
+                            class="right-side"
+                            src="../img/tutorials/forest-burned.png"
+                            alt="The model after running it"
+                        >
+                    </div>
+                </section>
+                <section>
+                    <div>
+                        <h4>Density</h4>
+                        <p>
+                            As you may have guessed, a denser forest will burn more easily in this model. You can check this by adjusting the <em>density</em> slider (press <em>setup</em> again after any changes).
+                            <br>
+                            This is due to the way in which fire spreads within the model. In order for an unburned tree to catch fire it must be directly adjacent to a burning tree. This only applies to trees above, below, left or right - not diagonals. As such, with lower density forests there is a higher chance of natural fire-breaks preventing the fire from spreading far. 
+                            <br>
+                            In the next section, we will explore creating artificial fire-breaks, amongst other things.
+                        </p>
+                    </div>
+                </section>
+                <section class="break" id="changes">
+                    <div>
+                        <h3>Changing the Code</h3>
+                        <p>
+                            Now you can load and run the base model. You can even change the density of the forest and gather some data if you so desire.
+                            <br>
+                            But what if you wanted some regular features within your forest? Maybe a stream, or a river? Alternatively, you might want the fire starting at a single point in the center of the forest, rather than one entire edge.
+                        </p>
+                    </div>
+                </section>
+                <section class="left-side">
+                    <img
+                        class="left-side"
+                        src="../img/cloudberries.svg"
+                        alt="Placeholder image, cloudberries logo"
+                    >
+                    <div>
+                        <h4>Lorem ipsum dolor sit amet.</h4>
+                        <p>
+                            <em>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid voluptatem maxime tempora reiciendis voluptate molestias libero. At aut repellendus dolorum qui, delectus suscipit asperiores quo, veniam incidunt a possimus! Repudiandae?</em>
+                        </p>
+                    </div>
+                </section>
+                <!--  -->
+                <section class="break" id="closing">
+                    <div>
+                        <h3>Closing Thoughts</h3>
+                        <p>
+                            I hope this has been an interesting initial foray into the world of NetLogo and multi-agent modelling. 
+                            <br>
+                            If you've enjoyed this then I would recommend considering some other modifications to the model and trying to implement them. 
+                            Additionally, it could be interesting to explore some of the other default models and play around with them.
+                            <br>
+                        </p>
+                    </div>
+                </section>
+                <section>
+                    <div>
+                        <h4><em>"All models are wrong, but some are useful"</em></h4>
+                        <p class="img-caption">- George Edward Pelham Box</p>
+                        <p>
+                            <br><br>
+                            Of course, this is at the end of the day a model - and many important factors are ignored or overlooked for a variety of reasons.
+                            <br>
+                            When designing a model it is important to consider what it is you actually want to examine. If your goal is to see how tree density effects the spread of a fire, then the default model could be quite useful. 
+                            If you were interested in the efficacy of fire-breaks on forest fires then the model would likely be less useful, since under the existing setup a firebreak will always work, whereas in reality numerous factors such as wind, and smaller foliage could cause a fire-break to fail.
+                            <br>
+                            This is in no way meant to put you off using models - but rather to consider what you are actually modelling, and to check it is analogous to what you want to measure.
+                            <br>
+                        </p>
+                    </div>
+                </section>
+                <section>
+                    <div>
+                        <h4>Other Models</h4>
+                        <p>
+                            There are a lot of models available in the default library. As such, there is a decent chance that there is an existing model related to an area you are already interested in.
+                            <br>
+                            If you're unsure of what to try though, I would recommend having a look at one of the following:
+                            <br>
+                            <em>Sample Models/Biology/Wolf Sheep Predation</em>: This model provides a predator/prey simulation in which there are two species, wolves and sheep that both need food to survive and reproduce. 
+                            The wolves kill and eat the sheep, the sheep eat grass, and the grass regrows over time. If there are too many wolves, the sheep will go extinct as they are all eaten and the wolves will follow shortly afterwards as they starve. If there are not enough wolves, the sheep will overpopulate and begin to run out of grass. 
+                            <br>
+                            <em>Sample Models/Networks/Virus on a Network</em>: This model generates a graph in which the nodes represent individuals and the edges represent connections. A virus then spreads through the graph with nodes starting susceptible to it and becoming infected or resistant over time. Personally, I have previously worked on a project in which we modified this model to create a gossip network and examine the dissemination of fake news.
+                        </p>
+                    </div>
+                </section>
+                <section class="left-side">
+                    <img 
+                        class="left-side-large"
+                        src="../img/tutorials/forest-gossip.png"
+                        alt="A screenshot of a gossip network in netlogo"
+                    >
+                    <div>
+                        <h4>Don't Start From Scratch</h4>
+                        <p>
+                            Whilst it might be tempting to build a model up from nothing it can often be much quicker and easier to adapt an existing model.
+                            <br>
+                            Of course, if want to make a model simply to make a model, then don't let me stop you. 
+                            But if you are trying to simulate a specific phenomena, then using an existing model as a basis can save you a lot of time and debugging, particularly if you are not overly familiar with NetLogo.
+                        </p>
+                    </div>
                 </section>
             </article>
     </article>

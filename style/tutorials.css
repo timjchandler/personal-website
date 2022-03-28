@@ -7,8 +7,20 @@ h1 {
     -webkit-text-fill-color: transparent;
 }
 
+h3 {
+    text-align: center;
+    background: -webkit-linear-gradient(-45deg, 
+        #e67700, #9d0208);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.8rem;
+    padding-bottom: 1rem;
+    /* font-weight: 300; */
+}
+
 h4 {
     color: #9d0208;
+    padding-bottom: 0.7rem;
 }
 
 a {
@@ -55,6 +67,11 @@ ul.inner {
     padding-left: 3rem;
 }
 
+li {
+    list-style-position: inside;
+    padding-left: 3rem;
+}
+
 mark {
     /* font-style: italic; */
     background-color:#ffc078; 
@@ -62,4 +79,31 @@ mark {
     padding-left: 0.2rem;
     padding-right: 0.2rem;
     padding-bottom: 0.1rem;
+}
+
+em {
+    /* padding: none;
+    margin: none;
+    font-style: normal; */
+    color: #9d0208;
+}
+
+img.full-size {
+    width: 30rem;
+    border-radius: 1rem;
+    object-fit: cover;
+    height: auto;
+    object-position: 0 60%;
+    object-fit: contain;
+}
+
+img.left-side-large {
+    width: 20rem;
+    padding-right: 1rem;
+}
+
+p.img-caption {
+    text-align: center;
+    color: #9d0208;
+    font-size: 0.7rem;
 }

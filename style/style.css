@@ -182,17 +182,19 @@ div.abstract {
     width: 25rem;
     color: #e67700;
     margin: auto;
-    padding: 1rem;
+    padding: 1.5rem 3rem 1.5rem 3rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
-    border-bottom: 0.08rem dotted #d9480f;
-    border-top: 0.08rem dotted #d9480f;
+    border-bottom: 0.1rem dotted #f08c05;
+    border-top: 0.1rem dotted #f08c05;
+    /* border-bottom: 0.08rem dotted #d9480f; */
+    /* border-top: 0.08rem dotted #d9480f; */
 }
 
-a.abs-link {
+/* a.abs-link {
     color: #a61e4d;
 }
 
 a.abs-link:hover {
     color:  #495057; 
-}
+} */

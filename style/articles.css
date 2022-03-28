@@ -113,6 +113,7 @@ img {
     width: 10rem;
     align-items: center;
     justify-content: center;
+    object-fit: contain;
 }
 
 img.left-side {
@@ -120,6 +121,7 @@ img.left-side {
 }
 
 img.right-side {
+    min-width: 10rem;
     padding-left: 4rem;
 }
 
@@ -129,10 +131,12 @@ img.full-size {
     object-fit: cover;
     height: 13rem;
     object-position: 0 60%;
+    object-fit: contain;
 }
 
 ul {
     width: 35rem;
+    /* list-style-type: outside; */
     /* color: #faf8f8; */
 }
 
