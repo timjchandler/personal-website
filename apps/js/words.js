@@ -179,9 +179,7 @@ function nextWord() {
 
 function resetColors() {
     articles = ['der', 'die', 'das', 'diepl'];
-    for (let idx = 0; idx < 4; ++idx) {
+    for (let idx = 0; idx < 4; ++idx)
         updateColors(articles[idx], defBtnClr, defHovClr);
-        console.log(articles[idx])
-    }
     setColor('--default-word', defWrdClr);
 }
