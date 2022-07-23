@@ -38,7 +38,8 @@ const die = [
     "bewegung",
     "biologie",
     "bitte",
-    "breifmarke"
+    "breifmarke",
+    "chemie",
 ]
 
 const das = [
@@ -76,7 +77,6 @@ const diepl = [
     "bitten",
     "breifkästen",
     "breifmarken",
-    "chemie",
 ]
 
 
