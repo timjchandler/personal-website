@@ -8,5 +8,6 @@ deployment:
     - /bin/cp index.html $DEPLOYPATH
     - /bin/cp -R articles $DEPLOYPATH
     - /bin/cp -R tutorials $DEPLOYPATH
+    - /bin/cp -R apps $DEPLOYPATH
     # Images
     - /bin/cp -R img $DEPLOYPATH

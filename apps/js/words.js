@@ -9,7 +9,16 @@ const der = [
     "arbeitstag",
     "astronaut",
     "aufzug",
-    "backer"
+    "backer",
+    "basketball",
+    "beginn",
+    "beitrag",
+    "besuch",
+    "betreib",
+    "betreibsrat",
+    "bierkrug",
+    "bildschirm",
+    "breifkasten"
 ]
 
 const die = [
@@ -21,12 +30,21 @@ const die = [
     "arbeitnehmerin",
     "art",
     "astronautin",
-    "backerin"
+    "backerin",
+    "beratung",
+    "berufsschule",
+    "besprechung",
+    "bestätigung",
+    "bewegung",
+    "biologie",
+    "bitte",
+    "breifmarke"
 ]
 
 const das = [
     "abitur",
     "baby",
+    "bild"
 ]
 
 const diepl = [
@@ -41,8 +59,28 @@ const diepl = [
     "arten",
     "astronauten",
     "aufzüge",
-    "backeren"
+    "backeren",
+    "beginne",
+    "beiträge",
+    "beratungen",
+    "berufsschulen",
+    "besprechungen",
+    "bestätigungen",
+    "besuche",
+    "betreibe",
+    "betreibsräte",
+    "bewegungen",
+    "bierkrüge",
+    "bilder",
+    "bildschirme",
+    "bitten",
+    "breifkästen",
+    "breifmarken",
+    "chemie",
 ]
+
+
+// TODO: Add option to turn off plural words
 
 const derLen = der.length;
 const dieLen = die.length; 
@@ -64,6 +102,8 @@ let correctAnswers = 0;
 let wrongAnswers = 0;
 let wrongThisTurn = false;
 
+let usingPlurals = true;
+
                     
 function setWord() {
     word = roll();
@@ -74,7 +114,8 @@ function setWord() {
 
 function roll() {
     initialRoll = Math.random();
-    totalWords = derLen + dieLen + dasLen + dieplLen;
+    totalWords = derLen + dieLen + dasLen;
+    if (usingPlurals) totalWords += dieplLen;
     threshold = derLen / totalWords
     if (threshold > initialRoll) return rollHelper(der, 0);
     threshold += dieLen / totalWords;
