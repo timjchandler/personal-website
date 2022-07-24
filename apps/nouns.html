@@ -5,39 +5,39 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@300;400&display=swap" rel="stylesheet"> 
-        <link href="../style/apps.css" rel="stylesheet"/>
+        <link href="../style/nouns.css" rel="stylesheet"/>
         <title>Deutschlernen</title>
-        <link rel="icon" href="../img/cloudberry.svg" type="image/x-icon">
-        <script src="js/words.js"></script>
+        <script src="quiz.js" type="module"></script>
     </head>
-        <header>
-            <div class="logo-title">
-                <img class="cloudberry" src="../img/cloudberry.svg" alt="cloudberries logo"/>
-            </div>
-            <nav>
-                <a class="top-menu" href="/index.html">home</a>
-                <a class="top-menu" href="/index.html#articles">articles</a>
-                <a class="top-menu" href="/index.html#tutorials">tutorials</a>
-            </nav>
-        </header>
+    <body>
         <article>
-            <!-- <div class="instruction-area">
-                <p class="instruction">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam sapiente hic nostrum error! In id obcaecati, architecto, fugit enim praesentium rem dolor sunt, ut ex eos. Numquam repudiandae rerum aliquam ducimus itaque a, corrupti reiciendis aperiam assumenda sed placeat saepe nemo pariatur fuga maxime sit magnam nihil iste, delectus natus.</p>
-                <p class="instruction">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit fuga, sed esse ex laborum optio neque reprehenderit maiores illo eum, adipisci minus eaque vitae aliquid aliquam? Explicabo commodi tempora eveniet?</p>
-            </div> -->
             <div class="score">
                 <h1 id="score-area"></h1>
             </div>
-            <div class="word-area", onclick="start()">
+            <div class="word-area" id="main-word">
                 <h2 id="current-word">Klicken Sie Hier</h2>
             </div>
-            <div class="button-area">
-                <button onclick="derClick()" class="button-ddd button-der" id="der">der</button>
-                <button onclick="dieClick()" class="button-ddd button-die" id="die">die</button>
-                <button onclick="dasClick()" class="button-ddd button-das" id="das">das</button>
-                <button onclick="dieplClick()" class="button-ddd button-diepl" id="diepl">die (pl)</button>
+            <div class="score-area">
+                <h1 id="score"></h1>
             </div>
-            <div id="main"></div>
+            <div class="button-area">
+                <button class="button-der" id="der">der</button>
+                <button class="button-die" id="die">die</button>
+                <button class="button-das" id="das">das</button>
+            </div>
+        </article>
+        <article class="trace" id="trace">
+            <!-- <div class="trace-element">
+                <h3>Artikel</h3>
+                <h3>Wort</h3>
+                <h3>Plural</h3>
+                <h3>englische Definition</h3>
+            </div> -->
+            <!-- <div class="trace-element" id="trace-1"></div>
+            <div class="trace-element" id="trace-2"></div>
+            <div class="trace-element" id="trace-3"></div>
+            <div class="trace-element" id="trace-4"></div>
+            <div class="trace-element" id="trace-5"></div> -->
         </article>
         <p class="copyright">&copy; 2022 Tim Chopard</p>
     </body>

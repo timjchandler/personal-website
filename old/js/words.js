@@ -18,7 +18,8 @@ const der = [
     "betreibsrat",
     "bierkrug",
     "bildschirm",
-    "breifkasten"
+    "breifkasten",
+    "cousin",
 ]
 
 const die = [
@@ -40,6 +41,7 @@ const die = [
     "bitte",
     "breifmarke",
     "chemie",
+    "cousine"
 ]
 
 const das = [
