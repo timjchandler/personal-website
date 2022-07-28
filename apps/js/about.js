@@ -1,5 +1,5 @@
-const aboutEng = "The translations to English were sourced from <a href=\"https://www.deepl.com/translator\">DeepL Translator</a>. All spelling mistakes are my own.<br><br>If you notice any spelling mistakes, or have any other feedback, please feel free to contact me <a href=\"contact.html\">here</a>."
-const aboutGer = "Die Übersetzungen ins Englische stammen von <a href=\"https://www.deepl.com/translator\">DeepL Translator</a>. Die Rechtschreibfehler sind von mir.<br><br>Wenn Sie Rechtschreibfehler oder andere Probleme bemerken, lassen Sie es mich bitte <a href=\"contact.html\">hier</a> wissen."
+const aboutEng = "This applet was built using JavaScript.<br><br>The translations to English were sourced from <a href=\"https://www.deepl.com/translator\">DeepL Translator</a>. All spelling mistakes are my own."//<br><br>If you notice any spelling mistakes, or have any other feedback, please feel free to contact me <a href=\"contact.html\">here</a>."
+const aboutGer = "Diese Anwendung wurde mit Javascript erstellt. <br><br>Die Übersetzungen ins Englische stammen von <a href=\"https://www.deepl.com/translator\">DeepL Translator</a>. Die Rechtschreibfehler sind von mir."//<br><br>Wenn Sie Rechtschreibfehler oder andere Probleme bemerken, lassen Sie es mich bitte <a href=\"contact.html\">hier</a> wissen."
 
 let aboutHidden = false;
 
